@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+jar {
+    baseName = 'za.co.fynbos.freemakertutorial'
+    version = '0.0.1-SNAPSHOT'
+}
+
+// JDK 8
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+	compile group: 'org.freemarker', name: 'freemarker', version: '2.3.28'
+}
